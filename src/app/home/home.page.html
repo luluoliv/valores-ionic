@@ -7,30 +7,34 @@
 <ion-content [fullscreen]="true">
   <ion-item>
     <ion-input
+    [(ngModel)]="nome"
       label="Nome"
       labelPlacement="floating"
-      placeholder="Inserir texto"
+      placeholder="Inserir seu nome"
     ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-input
+    [(ngModel)]="email"
       label="E-mail"
       labelPlacement="floating"
-      placeholder="Inserir texto"
+      placeholder="Inserir e-mail"
+      value="email"
     ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-input
+    [(ngModel)]="telefone"
       label="Telefone"
       labelPlacement="floating"
-      placeholder="Inserir texto"
+      placeholder="Inserir telefone"
       color="dark"
     ></ion-input>
   </ion-item>
 
-  <ion-button expand="block">
+  <ion-button expand="block" (click)="abrirTela()">
     <ion-icon name="send" slot="start" size="1em"></ion-icon>
-    Cadastrar</ion-button>
+    ENVIAR</ion-button>
 </ion-content>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tela-confirmar',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tela-confirmar.page.scss'],
 })
 export class TelaConfirmarPage implements OnInit {
+  nome: any;
+  telefone: any;
+  email: any;
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.nome = this.activatedRoute.snapshot.paramMap.get('nome');
+    this.email = this.activatedRoute.snapshot.paramMap.get('email');
+    this.telefone = this.activatedRoute.snapshot.paramMap.get('telefone');
   }
 
 }
