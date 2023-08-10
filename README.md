@@ -1,2 +1,2 @@
 # Valores entre Telas 🖥
-  Projeto acadêmico
+  Projeto acadêmico de Mobile | ETEC Aalbert Einstein
